@@ -11,19 +11,19 @@ export function PricingContent() {
 
     return(
         <>
-        {pricing.map((price, index) => (
+        {pricing.map((item, index) => (
             <PricingArticle 
                 key={index}
-                title={price.title}
-                desc={price.desc}
-                amount={price.amount}
-                button={price.button}
-                features={price.features}
-                access={price.access}
-                component={price.component}
-                tag={price.tag}
-                className={price.className}
-                variant={price.variant}
+                title={item.title}
+                desc={item.desc}
+                amount={item.amount}
+                button={item.button}
+                features={item.features}
+                access={item.access}
+                component={item.component}
+                tag={item.tag}
+                className={item.className}
+                variant={item.variant}
             />
         ))}
         </>

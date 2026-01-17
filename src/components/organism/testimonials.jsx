@@ -2,14 +2,14 @@ import { TestimonialContent } from "../molecules/testimonialContent";
 
 export function Testimonials() {
   return (
-   <section class="section section--alt" id="testimonials">
-      <div class="container">
-        <div class="section__head">
-          <h2 class="section__title">Loved by learners</h2>
-          <p class="section__subtitle">Great for practicing props, lists, and layout.</p>
+   <section className="section section--alt" id="testimonials">
+      <div className="container">
+        <div className="section__head">
+          <h2 className="section__title">Loved by learners</h2>
+          <p className="section__subtitle">Great for practicing props, lists, and layout.</p>
         </div>
 
-        <div class="grid grid--3">
+        <div className="grid grid--3">
             <TestimonialContent />
         </div>
       </div>

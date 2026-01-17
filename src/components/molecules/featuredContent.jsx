@@ -11,13 +11,13 @@ const featuredCardContent  = [
     return (
         <>
             <div className="grid grid--3">
-                {featuredCardContent.map((feat, index) => (
+                {featuredCardContent.map((item, index) => (
                     <FeaturedCard
                         key={index}
-                        icon={feat.icon}
-                        title={feat.title}
-                        text={feat.text}
-                        link={feat.link}
+                        icon={item.icon}
+                        title={item.title}
+                        text={item.text}
+                        link={item.link}
                     />
                 ))}
             </div>
@@ -34,9 +34,9 @@ export function FeaturedListContent() {
         "Keep CSS modular: component blocks"
     ];
     return (
-        <ul class="list">
+        <ul className="list">
             {listItems.map((item, index) => (
-                <li key={index} class="list__item"><span class="check">✓</span> {item}</li>
+                <li key={index} className="list__item"><span className="check">✓</span> {item}</li>
             ))}
         </ul>
 
@@ -54,9 +54,9 @@ export function FeaturedMockRow() {
         "Modal"
     ];
     return (
-        <div class="mock__row">
+        <div className="mock__row">
             {mockRowItems.map((item, index) => (
-                <div key={index} class="chip">{item}</div>
+                <div key={index} className="chip">{item}</div>
             ))}
         </div>
     )

@@ -11,8 +11,8 @@ export function StatsContent() {
     return (
         <>
             <div className="stats__grid">
-                {statsData.map((stat, index) => (
-                    <Stats key={index} count={stat.count} label={stat.label} />
+                {statsData.map((item, index) => (
+                    <Stats key={index} count={item.count} label={item.label} />
                 ))}
             </div>
         </>

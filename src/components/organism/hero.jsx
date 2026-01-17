@@ -81,8 +81,8 @@ export function Hero () {
             </div>
           </div>
         </section>
-        <section class="stats">
-          <div class="container">
+        <section className="stats">
+          <div className="container">
             <StatsContent />
           </div>
         </section>

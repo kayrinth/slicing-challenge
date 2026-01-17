@@ -10,13 +10,13 @@ export function TestimonialContent() {
 
   return (
     <>
-      {testimonials.map((test, index) => (
+      {testimonials.map((item, index) => (
         <TestimonialArticle
           key={index}
-          text={test.text}
-          name={test.name}
-          role={test.role}
-          avatarClass={test.avatarClass}
+          text={item.text}
+          name={item.name}
+          role={item.role}
+          avatarClass={item.avatarClass}
         />
       ))}
    </>
