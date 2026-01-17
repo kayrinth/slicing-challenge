@@ -2,8 +2,8 @@ import { Stats } from "../atoms/stats"
 export function StatsContent() {
 
     const statsData = [
-        { count: 13, label: 'Page Sections' },
-        { count: 2, label: 'Reusable Components' },
+        { count: 3, label: 'Page Sections' },
+        { count: 12, label: 'Reusable Components' },
         { count: 1, label: 'CSS File' },
         { count: 0, label: 'Dependencies' },
     ];

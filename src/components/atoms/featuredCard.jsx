@@ -1,4 +1,4 @@
-export function FeaturedCard({ icon, title, text, link }) {
+export function FeaturedCard({ icon, title, text, link, cardLink }) {
     return (
         <article className="feature-card">
             <div className="icon-bubble" aria-hidden="true">{icon}</div>
@@ -6,7 +6,7 @@ export function FeaturedCard({ icon, title, text, link }) {
             <p className="feature-card__text">
               {text}
             </p>
-            <a className="feature-card__link" href={link}>Learn more</a>
+            <a className="feature-card__link" href={link}>{cardLink}</a>
         </article>
     );
 }

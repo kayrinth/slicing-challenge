@@ -2,9 +2,9 @@ import { FeaturedCard } from "../atoms/featuredCard";
 
 export function FeaturedCardContent() {
 const featuredCardContent  = [
- {icon: '⚡', title: 'Clean Spacing', text: 'Consistent paddings and gaps so your components look aligned.', link: '#pricing'},
- {icon: '🧩', title: 'Reusable Cards', text: 'Card patterns you can reuse for products, posts or services.', link: '#testimonials'},
- {icon: '🎯', title: 'Simple Colors', text: 'Neutral base with one accent color, easy to theme later.', link: '#faq'},
+ {icon: '⚡', title: 'Clean Spacing', text: 'Consistent paddings and gaps so your components look aligned.', link: '#pricing', cardLink: 'Learn more'},
+ {icon: '🧩', title: 'Reusable Cards', text: 'Card patterns you can reuse for products, posts or services.', link: '#testimonials', cardLink: 'See examples'},
+ {icon: '🎯', title: 'Simple Colors', text: 'Neutral base with one accent color, easy to theme later.', link: '#faq', cardLink: 'How to slice'},
 
 ]
 
@@ -18,6 +18,7 @@ const featuredCardContent  = [
                         title={item.title}
                         text={item.text}
                         link={item.link}
+                        cardLink={item.cardLink}
                     />
                 ))}
             </div>
